@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import ChurchLogo from "../assets/dc-logo.jpg";
-import PstImage from "../assets/meta-6946620_1280.jpg";
-import PstImage2 from "../assets/neom-dfglhJbc4Uc-unsplash.jpg";
-import PstImage3 from "../assets/photo-1575936123452-b67c3203c357.jpeg";
-import PstImage4 from "../assets/neom-dfglhJbc4Uc-unsplash.jpg";
-import PstImage5 from "../assets/download.jpeg";
+import PstImage from "../assets/PVA.png";
+import PstImage2 from "../assets/PFA.png";
+import PstImage3 from "../assets/PFO.png";
+import PstImage4 from "../assets/PIBK.png";
+import PstImage5 from "../assets/ODUNAYO.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -154,7 +154,7 @@ const AboutAdvance = () => {
             className="h-[200px] rounded-md"
           />
           <p className="text-[16px] text-center">
-            Pastor Victory Adudu <br /> RCCG Expression Church
+            Pastor Victory Adudu <br />  Pastor-in-charge Expression Church
           </p>
         </div>
         <div className=" lg:w-full w-[85%] mx-auto">
@@ -165,7 +165,7 @@ const AboutAdvance = () => {
             className="h-[200px] rounded-md"
           />
           <p className="text-[16px] text-center">
-            Pastor Femi Akinwale <br /> RCCG Discovery Center
+            Pastor Femi Akinwale <br /> Lead Pastor, RCCG Discovery Centre
           </p>
         </div>
         <div className=" lg:w-full w-[85%] mx-auto">
@@ -176,7 +176,9 @@ const AboutAdvance = () => {
             className="h-[200px] rounded-md"
           />
           <p className="text-[16px] text-center">
-            Pastor Femi Oyetunde <br /> RCCG Expression Church
+            Pastor Femi Oyetunde <br /> Lead Pastor Expression Nation
+
+
           </p>
         </div>
         <div className=" lg:w-full w-[85%] mx-auto">
@@ -187,7 +189,7 @@ const AboutAdvance = () => {
             className="h-[200px] rounded-md"
           />
           <p className="text-[16px] text-center">
-            Pastor Ibukun Onifade <br /> RCCG Mercy Seat
+            Pastor Ibukun Onifade <br /> Lead Pastor, RCCG The Archivers.
           </p>
         </div>
         <div className=" lg:w-full w-[85%] mx-auto">
