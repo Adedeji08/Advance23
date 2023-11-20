@@ -142,7 +142,7 @@ const AboutAdvance = () => {
         THE MINISTERS
       </h1>
       <motion.div
-        className="grid lg:grid-cols-5 gap-5 mt-5 justify-center cursor-pointer"
+        className="grid lg:grid-cols-5  mt-5 justify-center cursor-pointer"
         variants={flipVariants}
         animate={inView ? "visible" : "hidden"}
       >
