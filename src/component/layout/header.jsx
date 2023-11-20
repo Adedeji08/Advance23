@@ -3,6 +3,7 @@ import { ChurchLogo } from "../../assets/icon";
 // import { Link, animateScroll as scroll } from "react-scroll";
 import { Link } from "react-scroll";
 import { motion, useAnimation } from "framer-motion";
+import DCLOGO from '../../assets/dc-logo.jpg'
 
 function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -15,8 +16,10 @@ function Header() {
   return (
     <div className="h-[80px] shadow-sm border fixed w-[90%] top-0 bg-white z-50">
       <div className="my-5 mx-5 flex justify-between items-center">
-        <motion.span className="static mb-[128px] lg:mb-0">
-          <ChurchLogo />
+        <motion.span className="static mb-[128px] w-[120px] lg:mb-0">
+          <Link  to="home" smooth={true} className="cursor-pointer">
+        <img src={DCLOGO} alt="align" />
+        </Link>
         </motion.span>
         <ul
           className={`lg:flex text-[16px] block font-medium gap-3  ${

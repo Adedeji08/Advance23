@@ -49,10 +49,10 @@ function Footer() {
     className="mt-16">
     <motion.div
      variants={item1}
-      className="bg-[#0d3c00] grid lg:grid-cols-3 grid-cols-1 pl-5 pt-5"
+      className="bg-[#0d3c00] grid lg:grid-cols-4 grid-cols-1 pl-5 pt-5"
     >
     
-      <div>
+      <div className='ml-4'>
         <h1 className="text-2xl font-black border-b-1 text-white border-red-500 footer__head">
           Contact Us
         </h1>
@@ -77,7 +77,8 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div>
+
+      <div className='ml-5'>
         <h1 className="text-2xl font-black border-b-1 text-white border-red-500  footer__head">
           Our Church
         </h1>
@@ -97,7 +98,19 @@ function Footer() {
         </ul>
       </div>
 
-      <div>
+      <div className='mr-5'>
+        <h1 className=" text-white font-black  footer__head">
+         Giving: You can support the church with your giving.
+        </h1>
+        <ul
+          className="pt-5 font-medium text-sm text-white leading-7"
+        >
+        <li> Discovery Center <span className='text-[#C5292A]'>7512401016</span> FCMB</li>
+        </ul>
+           
+      </div>
+
+      <div className='mr-5'>
         <h1 className="text-2xl font-black border-b-1 text-white border-red-500 footer__head">
           NewsLetter
         </h1>
