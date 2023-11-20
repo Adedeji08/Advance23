@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
-}
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.slick-arrow, .slick-prev, .slick-next {
+    font-size: 24px;
+    color: black !important;  
+    background-color: black !important;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .slick-prev {
+    left: 10px;
+    
   }
-  to {
-    transform: rotate(360deg);
+  
+  .slick-next {
+    right: 10px;
   }
-}
+
+  .custom-phone-input {
+    display: flex;
+    height: 54px;
+    padding: 10px 14px;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid var(--gray-300, #c2c3c5);
+    background: #F8FAFB;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    outline: 2px solid transparent;
+    margin-top: 0.3rem;
+  }
+  
+  .custom-phone-input input{
+    background: #F8FAFB;
+  }
+  
