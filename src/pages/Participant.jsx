@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import { TextField, Grid } from "@mui/material";
-import { useForm, SubmitHandler, Controller } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import PhoneInput from "react-phone-number-input";
 import FormHelperText from "@mui/material/FormHelperText/FormHelperText";
 import "react-phone-number-input/style.css";
@@ -33,13 +33,6 @@ function Participant() {
     resolver: yupResolver(schema), // If you are using Yup for validation
   });
 
-
-
-  const onSubmit = (data) => {
-    // Handle form submission here
-    console.log(data);
-  };
-
   return (
     <div className="w-[70%] mx-auto mt-14 ">
       <form onSubmit={handleSubmit}
@@ -48,7 +41,7 @@ function Participant() {
         method="POST"
         encType="multipart/form-data"
        
-      >
+      > 
         <div className="grid lg:grid-cols-2 gap-3">
           <div className="mt-[38px] font-normal text-[15px] mr-[10px] ">
             <label className="block mb-2 text-[#8697A8]">First Name</label>

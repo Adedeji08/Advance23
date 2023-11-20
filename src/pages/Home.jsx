@@ -1,6 +1,6 @@
 import React from "react";
-import ChurchImage from "../assets/photo-1575936123452-b67c3203c357.jpeg";
-import ChurchImage2 from "../assets/neom-dfglhJbc4Uc-unsplash.jpg";
+import ChurchImage from "../assets/advance.jpg";
+import ChurchImage2 from "../assets/advance2.jpg";
 import ChurchImage3 from "../assets/meta-6946620_1280.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,7 +12,7 @@ const DiscoveryHome = () => {
 
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: {
+    visible: { 
       opacity: 1,
       y: 0,
       transition: { duration: 1 },

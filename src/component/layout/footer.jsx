@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link} from 'react-scroll';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -21,7 +21,7 @@ function Footer() {
       opacity: 1,
     },
     hidden: {
-      opacity: 0,
+      opacity: 0, 
     },
   };
   const item1 = {
@@ -43,7 +43,7 @@ function Footer() {
 
   return (
     <motion.div
-    variants={list}
+    variants={list} 
     ref={ref}
     animate={control}
     className="mt-16">

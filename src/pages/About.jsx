@@ -106,15 +106,16 @@ const AboutAdvance = () => {
             where the church leads in unprecedented glory.
           </motion.p>
         </div>
-        <div className="mt-[130px]">
+        <div className="mt-[130px]"> 
           <img src={ChurchLogo} alt="alt" />
         </div>
       </section>
 
       <section className="grid lg:grid-cols-[1fr,2fr] gap-10 mt-14">
-        <div className="mt-[130px]">
+        <div className="hidden lg:block mt-[130px]">
           <img src={ChurchLogo} alt="alt" />
         </div>
+
         <div>
           <motion.h3
             variants={item1}
@@ -147,7 +148,7 @@ const AboutAdvance = () => {
         variants={flipVariants}
         animate={inView ? "visible" : "hidden"}
       >
-        <div>
+        <div className=" lg:w-full w-[85%] mx-auto">
           <img
             src={PstImage}
             variants={item1}
@@ -158,7 +159,7 @@ const AboutAdvance = () => {
             Pastor Victory Adudu <br /> RCCG Expression Church
           </p>
         </div>
-        <div>
+        <div className=" lg:w-full w-[85%] mx-auto">
           <img
             src={PstImage2}
             variants={item1}
@@ -169,7 +170,7 @@ const AboutAdvance = () => {
             Pastor Femi Akinwale <br /> RCCG Discovery Center
           </p>
         </div>
-        <div>
+        <div className=" lg:w-full w-[85%] mx-auto">
           <img
             src={PstImage3}
             variants={item1}
@@ -180,7 +181,7 @@ const AboutAdvance = () => {
             Pastor Femi Oyetunde <br /> RCCG Expression Church
           </p>
         </div>
-        <div>
+        <div className=" lg:w-full w-[85%] mx-auto">
           <img
             src={PstImage4}
             variants={item1}
@@ -191,7 +192,7 @@ const AboutAdvance = () => {
             Pastor Ibukun Onifade <br /> RCCG Mercy Seat
           </p>
         </div>
-        <div>
+        <div className=" lg:w-full w-[85%] mx-auto">
           <img
             src={PstImage5}
             variants={item1}
