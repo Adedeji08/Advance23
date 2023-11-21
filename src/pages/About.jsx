@@ -154,7 +154,7 @@ const AboutAdvance = () => {
             className="rounded-md"
           />
           <p className="text-[16px] text-center leading-4 pt-2">
-           <b>Pastor Victory Adudu </b> <br />  Pastor-in-charge Expression Church
+           <b>Pastor Victory Adudu </b> <br />  Pastor-in-charge, Expression Church
           </p>
         </div>
         <div className=" lg:w-full mx-auto">
@@ -176,7 +176,7 @@ const AboutAdvance = () => {
             className=" rounded-md"
           />
           <p className="text-[16px] text-center leading-4 pt-2">
-           <b> Pastor Femi Oyetunde </b> <br /> Lead Pastor Expression Nation
+           <b> Pastor Femi Oyetunde </b> <br /> Lead Pastor, Expression Nation
 
 
           </p>

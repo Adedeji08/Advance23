@@ -72,7 +72,7 @@ function Footer() {
                   target='_blank' rel='noreferrer'
             >
               {" "}
-             Omiru street by transformer, unit estate NPOG filling station, Mowe, Ogun State.
+              RCCG, Discovery Centre, Omiru Street by Transformer, Unity Estate, by NPOG Filling Station, Mowe.
             </NavLink>
           </li>
         </ul>
