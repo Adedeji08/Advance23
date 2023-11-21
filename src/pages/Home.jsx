@@ -98,7 +98,7 @@ const DiscoveryHome = () => {
           initial="hidden"
           animate="visible"
         >
-          <h1 className="text-center text-[44px] font-bold">
+          <h1 className="text-center text-[44px] font-bold leading-10">
             ADVANCE WORD CONFERENCE
           </h1>
           <motion.p
