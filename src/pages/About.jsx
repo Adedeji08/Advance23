@@ -87,10 +87,10 @@ const AboutAdvance = () => {
     >
       <section className="grid lg:grid-cols-[2fr,1fr] gap-9">
         <div>
-          <h3 className="text-[#117C1A] text-[23px] font-medium">
+          <h3 className="text-[#117C1A] text-[23px] font-medium text-center lg:text-left">
             Advance 2023
           </h3>
-          <h1 className="text-[26px] font-semibold"> Welcome to the Supernatural</h1>
+          <h1 className="text-[26px] font-semibold text-center lg:text-left"> Welcome to the Supernatural</h1>
           <motion.p
             variants={item1}
             className="text-[20px] font-medium mt-5 leading-10"
@@ -104,7 +104,7 @@ const AboutAdvance = () => {
             for the supernatural.
           </motion.p>
         </div>
-        <div className="mt-[130px] ">
+        <div className="mt-[130px] hidden lg:block ">
           <img src={ChurchLogo} alt="alt" className="w-[350px]" />
         </div>
       </section>
@@ -153,7 +153,7 @@ const AboutAdvance = () => {
             alt="alt"
             className="rounded-md"
           />
-          <p className="text-[16px] text-center leading-4">
+          <p className="text-[16px] text-center leading-4 pt-2">
            <b>Pastor Victory Adudu </b> <br />  Pastor-in-charge Expression Church
           </p>
         </div>
@@ -164,7 +164,7 @@ const AboutAdvance = () => {
             alt="alt"
             className=" rounded-md"
           />
-          <p className="text-[16px] text-center leading-4">
+          <p className="text-[16px] text-center leading-4 pt-2">
            <b> Pastor Femi Akinwale</b> <br /> Lead Pastor, RCCG Discovery Centre
           </p>
         </div>
@@ -175,7 +175,7 @@ const AboutAdvance = () => {
             alt="alt"
             className=" rounded-md"
           />
-          <p className="text-[16px] text-center leading-4">
+          <p className="text-[16px] text-center leading-4 pt-2">
            <b> Pastor Femi Oyetunde </b> <br /> Lead Pastor Expression Nation
 
 
@@ -188,7 +188,7 @@ const AboutAdvance = () => {
             alt="alt"
             className=" rounded-md"
           />
-          <p className="text-[16px] text-center leading-4">
+          <p className="text-[16px] text-center leading-4 pt-2">
           <b> Pastor Ibukun Onifade </b> <br /> Lead Pastor, RCCG The Archivers.
           </p>
         </div>
@@ -199,7 +199,7 @@ const AboutAdvance = () => {
             alt="alt"
             className="rounded-md"
           />
-          <p className="text-[16px] text-center leading-4">
+          <p className="text-[16px] text-center leading-4 pt-2">
           <b> Minister Odunayo Adebayo </b> <br /> Music Minister
           </p>
         </div>

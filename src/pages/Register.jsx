@@ -13,12 +13,14 @@ function AdvanceRegistration() {
 
   return (
     <div className="mt-5 " id='register'>
+      <div className=" lg:w-[16%] w-[50%]  mx-auto lg:mx-0">
     <button
-      className="bg-[#117C1A] hover:bg-[#68d571] rounded text-white w-[200px] h-10 transition duration-300 ease-in-out"
+      className="bg-[#117C1A] hover:bg-[#68d571] rounded text-white w-[100%] h-10 transition duration-300 ease-in-out cursor-pointer"
       onClick={() => setShowTabContent(!showTabContent)}
     >
      Click Here to Register
     </button>
+    </div>
     {showTabContent && (
       <div className="w-[40%] mx-auto flex gap-10">
         <button
