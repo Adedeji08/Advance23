@@ -223,7 +223,7 @@ function Volunteer() {
 
           <div className="mt-[38px] font-normal text-[15px] mr-[10px]">
             <label className="block mb-2 text-[#8697A8]">
-              Accommodation (optional)
+              Accommodation
             </label>
             <Controller
               name="accommodation"

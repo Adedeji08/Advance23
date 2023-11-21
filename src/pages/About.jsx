@@ -142,65 +142,65 @@ const AboutAdvance = () => {
         THE MINISTERS
       </h1>
       <motion.div
-        className="grid lg:grid-cols-5  mt-5 justify-center cursor-pointer"
+        className="grid lg:grid-cols-5 gap-5 mt-5 justify-center cursor-pointer"
         variants={flipVariants}
         animate={inView ? "visible" : "hidden"}
       >
-        <div className=" lg:w-full w-[85%] mx-auto">
+        <div className=" lg:w-full  mx-auto">
           <img
             src={PstImage}
             variants={item1}
             alt="alt"
-            className="h-[200px] rounded-md"
+            className="rounded-md"
           />
-          <p className="text-[16px] text-center">
-            Pastor Victory Adudu <br />  Pastor-in-charge Expression Church
+          <p className="text-[16px] text-center leading-4">
+           <b>Pastor Victory Adudu </b> <br />  Pastor-in-charge Expression Church
           </p>
         </div>
-        <div className=" lg:w-full w-[85%] mx-auto">
+        <div className=" lg:w-full mx-auto">
           <img
             src={PstImage2}
             variants={item1}
             alt="alt"
-            className="h-[200px] rounded-md"
+            className=" rounded-md"
           />
-          <p className="text-[16px] text-center">
-            Pastor Femi Akinwale <br /> Lead Pastor, RCCG Discovery Centre
+          <p className="text-[16px] text-center leading-4">
+           <b> Pastor Femi Akinwale</b> <br /> Lead Pastor, RCCG Discovery Centre
           </p>
         </div>
-        <div className=" lg:w-full w-[85%] mx-auto">
+        <div className=" lg:w-full  mx-auto">
           <img
             src={PstImage3}
             variants={item1}
             alt="alt"
-            className="h-[200px] rounded-md"
+            className=" rounded-md"
           />
-          <p className="text-[16px] text-center">
-            Pastor Femi Oyetunde <br /> Lead Pastor Expression Nation
+          <p className="text-[16px] text-center leading-4">
+           <b> Pastor Femi Oyetunde </b> <br /> Lead Pastor Expression Nation
 
 
           </p>
         </div>
-        <div className=" lg:w-full w-[85%] mx-auto">
+        <div className=" lg:w-full  mx-auto">
           <img
             src={PstImage4}
             variants={item1}
             alt="alt"
-            className="h-[200px] rounded-md"
+            className=" rounded-md"
           />
-          <p className="text-[16px] text-center">
-            Pastor Ibukun Onifade <br /> Lead Pastor, RCCG The Archivers.
+          <p className="text-[16px] text-center leading-4">
+          <b> Pastor Ibukun Onifade </b> <br /> Lead Pastor, RCCG The Archivers.
           </p>
         </div>
-        <div className=" lg:w-full w-[85%] mx-auto">
+        <div className=" lg:w-full mx-auto">
           <img
             src={PstImage5}
             variants={item1}
             alt="alt"
-            className="h-[200px] rounded-md"
+            className="rounded-md"
           />
-          <p className="text-[16px] text-center">
-            Minister Odunayo Adebayo <br /> Music Minister
+          <p className="text-[16px] text-center leading-4">
+          <b> Minister Odunayo Adebayo </b> <br /> Music Minister
           </p>
         </div>
       </motion.div>
