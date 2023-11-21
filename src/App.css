@@ -38,3 +38,8 @@
     width: 150px;
     border-bottom: 2px solid #E92300;
   }
+  .load{
+    width: 100px;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
