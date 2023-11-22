@@ -25,7 +25,14 @@ function Volunteer() {
 
   return (
        <div className="w-[70%] mx-auto mt-14 ">
-      <form className="new-staff-form">
+      <form 
+      onSubmit={handleSubmit}
+      className="new-staff-form "
+      action="https://getform.io/f/a5394d71-cc0e-464b-bb37-98358006dec7"
+      method="POST"
+      encType="multipart/form-data"
+     
+      >
         <div className="grid lg:grid-cols-2 gap-3">
           <div className="mt-[38px] font-normal text-[15px] mr-[10px] ">
             <label className="block mb-2 text-[#8697A8]">First Name</label>

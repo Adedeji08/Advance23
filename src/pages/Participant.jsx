@@ -35,9 +35,10 @@ function Participant() {
 
   return (
     <div className="w-[70%] mx-auto mt-14 ">
-      <form onSubmit={handleSubmit}
+      <form 
+      onSubmit={handleSubmit}
         className="new-staff-form "
-        action="https://getform.io/f/4ab5ae01-8a7f-492d-a978-d530457bcd45"
+        action="https://getform.io/f/a5394d71-cc0e-464b-bb37-98358006dec7"
         method="POST"
         encType="multipart/form-data"
        

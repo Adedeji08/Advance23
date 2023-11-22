@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { Link} from 'react-scroll';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useForm } from "react-hook-form";
 
 function Footer() {
   const control = useAnimation();
@@ -40,6 +41,14 @@ function Footer() {
       x: -100,
     },
   };
+  
+  const {
+    handleSubmit,
+    footerControl,
+    reset,
+    formState: { errors },
+    setValue,
+  } = useForm();
 
   return (
     <motion.div
@@ -121,15 +130,24 @@ function Footer() {
           Subscribe to our Newsletter & Event right now to be updated.
         </p>
         <div className="mt-5">
+          <form
+           onSubmit={handleSubmit}
+           className="new-staff-form "
+           action="https://getform.io/f/a5394d71-cc0e-464b-bb37-98358006dec7"
+           method="POST"
+           encType="multipart/form-data"
+          
+          >
           <input
-
             type="email"
+            name='email'
             placeholder="Enter your email"
             className="border border-red-400 w-[65%] rounded h-10 pl-5 newsletter block"
           />
           <button className="newsletter-btn border text-white rounded border-white w-[65%] mt-5 bg-red-600  h-10">
             Subscribe
           </button>
+          </form>
         </div>
       </div>
       <p className="text-red-500 font-extralight text-xs mt-4">
