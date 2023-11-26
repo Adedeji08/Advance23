@@ -146,15 +146,15 @@ const AboutAdvance = () => {
         variants={flipVariants}
         animate={inView ? "visible" : "hidden"}
       >
-        <div className=" lg:w-full  mx-auto">
+       <div className=" lg:w-full  mx-auto">
           <img
-            src={PstImage}
+            src={PstImage3}
             variants={item1}
             alt="alt"
-            className="rounded-md"
+            className=" rounded-md"
           />
           <p className="text-[16px] text-center leading-4 pt-2">
-           <b>Pastor Victory Adudu </b> <br />  Pastor-in-charge, Expression Church
+           <b> Pastor Femi Oyetunde </b> <br /> Zonal Pastor, Expression Nation
           </p>
         </div>
         <div className=" lg:w-full mx-auto">
@@ -168,17 +168,16 @@ const AboutAdvance = () => {
            <b> Pastor Femi Akinwale</b> <br /> Lead Pastor, RCCG Discovery Centre
           </p>
         </div>
+        
         <div className=" lg:w-full  mx-auto">
           <img
-            src={PstImage3}
+            src={PstImage}
             variants={item1}
             alt="alt"
-            className=" rounded-md"
+            className="rounded-md"
           />
           <p className="text-[16px] text-center leading-4 pt-2">
-           <b> Pastor Femi Oyetunde </b> <br /> Lead Pastor, Expression Nation
-
-
+           <b>Pastor Victory Adudu </b> <br />  Parish Pastor, Expression Church
           </p>
         </div>
         <div className=" lg:w-full  mx-auto">
