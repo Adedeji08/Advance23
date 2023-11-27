@@ -115,9 +115,8 @@ function Footer() {
           className="pt-5 font-medium text-sm text-white leading-7"
         >
           <li> You can support the church with your giving.</li>
-        <li> Discovery Center <span className='text-[#C5292A]'>7512401016</span> FCMB</li>
+        <li>  RCCG DISCOVERY CENTRE <span className='text-[#C5292A]'>0040099109</span> PREMIUM TRUST BANK</li>
         </ul>
-           
       </div>
 
       <div className='lg:mr-5 mt-5 lg:mt-0 '>
@@ -133,7 +132,7 @@ function Footer() {
           <form
            onSubmit={handleSubmit}
            className="new-staff-form "
-           action="https://getform.io/f/a5394d71-cc0e-464b-bb37-98358006dec7"
+           action="https://getform.io/f/4ea57067-4d6d-4143-8100-47220c9835ff"
            method="POST"
            encType="multipart/form-data"
           
