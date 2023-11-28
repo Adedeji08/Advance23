@@ -43,3 +43,130 @@
     /* margin-left: auto;
     margin-right: auto; */
   }
+
+  /* NOTIFICATIONS-TOAST */
+.toast-message-container .Toastify__toast-container {
+  width: 359px;
+  height: 69px;
+
+}
+.toast-message-container .Toastify__toast {
+  margin-bottom: 0px;
+  padding: 11px;
+  border-radius: 23px;
+  align-items: center;
+}
+
+.Toastify__toast-container {
+  z-index: 100000 !important;
+}
+
+/* ERROR */
+.Toastify__toast--error {
+  border: 1px solid #f1acac;
+  background: #f3f6ff !important;
+}
+.Toastify__toast--error::after {
+
+  position: absolute;
+  left: 265px;
+  margin-left: 8px;
+}
+.Toastify__toast--error::before {
+
+  position: relative;
+  z-index: 100000;
+  left: 12px;
+  top: 6px;
+}
+.Toastify__toast--error .Toastify__toast-body {
+  color: #ff0101;
+  margin-right: 22px;
+}
+
+/* SUCCESS */
+.Toastify__toast--success {
+  border: 1px solid #8ee887;
+  background: #f3f6ff !important;
+}
+.Toastify__toast--success::after {
+
+  position: absolute;
+  left: 265px;
+}
+.Toastify__toast--success::before {
+
+  position: relative;
+  z-index: 100000;
+  left: 12px;
+  top: 6px;
+}
+.Toastify__toast--success .Toastify__toast-body {
+  color: #0b8800;
+  margin-right: 22px;
+}
+
+/* WARNING */
+.Toastify__toast--warning {
+  border: 1px solid #f1daac;
+  background: #f3f6ff !important;
+}
+.Toastify__toast--warning::after {
+
+  position: absolute;
+  left: 265px;
+}
+.Toastify__toast--warning::before {
+ 
+  position: relative;
+  z-index: 100000;
+  left: 12px;
+  top: 6px;
+}
+.Toastify__toast--warning .Toastify__toast-body {
+  color: #efac01;
+  margin-right: 22px;
+}
+
+/* INFORMATION */
+.Toastify__toast--info {
+  border: 1px solid #accdf1;
+  background: #f3f6ff !important;
+}
+.Toastify__toast--info::after {
+
+  position: absolute;
+  left: 265px;
+}
+.Toastify__toast--info::before {
+
+  position: relative;
+  z-index: 100000;
+  left: 12px;
+  top: 6px;
+}
+.Toastify__toast--info .Toastify__toast-body {
+  color: #0068db;
+  margin-right: 22px;
+}
+
+.Toastify__toast-body {
+  font-size: 16px;
+  line-height: normal;
+  width: 100%;
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 20px !important;
+}
+.Toastify__toast > button > svg {
+  display: none;
+}
+
+.Toastify__toast-icon {
+  display: none !important;
+}
+
+.Toastify__progress-bar {
+  visibility: hidden;
+}

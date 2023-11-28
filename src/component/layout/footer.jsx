@@ -1,13 +1,20 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { NavLink } from 'react-router-dom';
 import { Link} from 'react-scroll';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useForm } from "react-hook-form";
+import emailjs, { sendForm } from '@emailjs/browser'
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import { useState } from 'react';
+import CircleLoader from "react-spinners/CircleLoader";
 
 function Footer() {
   const control = useAnimation();
+  const [loading, setLoading] = useState(false);
   const [ref, inView] = useInView();
+  const form = useRef()
 
   useEffect(() => {
     if (inView) {
@@ -49,6 +56,29 @@ function Footer() {
     formState: { errors },
     setValue,
   } = useForm();
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    setLoading(true); 
+    try {
+      await emailjs.sendForm(
+        'service_qbadhm9',
+        'template_tr94g6q',
+        form.current,
+        '8LdIQzTIF_nj5NP0p'
+      );
+  
+      toast.success('You have successfully subscribed for Discovery Center Newsletter!');
+     
+    } catch (error) {
+      toast.error('Failed to send the message, please try again');
+     
+  
+    } finally {
+      setLoading(false);
+    }
+  };
+  
 
   return (
     <motion.div
@@ -130,12 +160,7 @@ function Footer() {
         </p>
         <div className="mt-5">
           <form
-           onSubmit={handleSubmit}
-           className="new-staff-form "
-           action="https://getform.io/f/78817b5b-232c-4a4e-a5da-d26f37bbc897"
-           method="POST"
-           encType="multipart/form-data"
-          
+           ref={form} onSubmit={sendEmail}
           >
           <input
             type="email"
@@ -143,9 +168,17 @@ function Footer() {
             placeholder="Enter your email"
             className="border border-red-400 w-[65%] rounded h-10 pl-5 newsletter block"
           />
-          <button className="newsletter-btn border text-white rounded border-white w-[65%] mt-5 bg-red-600  h-10">
-            Subscribe
-          </button>
+         
+          <button
+          type="submit"
+          className="newsletter-btn border text-white rounded border-white w-[65%] mt-5 bg-red-600  h-10"
+        >
+          {loading ? (
+            <CircleLoader color="#ffffff" loading={loading} size={20} />
+          ) : (
+            "Subscribe"
+          )}
+        </button>
           </form>
         </div>
       </div>

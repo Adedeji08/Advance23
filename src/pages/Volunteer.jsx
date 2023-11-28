@@ -8,10 +8,14 @@ import PhoneInput from "react-phone-number-input";
 import FormHelperText from "@mui/material/FormHelperText/FormHelperText";
 import "react-phone-number-input/style.css";
 import CircleLoader from "react-spinners/CircleLoader";
+import emailjs, { sendForm } from '@emailjs/browser'
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function Volunteer() {
     const [loading, setLoading] = useState(false);
+    const form = useRef()
   const {
     handleSubmit,
     control,
@@ -22,15 +26,32 @@ function Volunteer() {
 
   const departments = ['Ushering', 'Media', 'Sanitation', 'Protocol', 'Welfare', 'Watch Men'];
 
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    setLoading(true); 
+    try {
+      await emailjs.sendForm(
+        'service_qbadhm9',
+        'template_tr94g6q',
+        form.current,
+        '8LdIQzTIF_nj5NP0p'
+      );
+  
+      toast.success('You have successfully registered for advance 2023!');
+     
+    } catch (error) {
+      toast.error('Failed to send the message, please try again');
+     
+  
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
        <div className="w-[70%] mx-auto mt-14 ">
       <form 
-      onSubmit={handleSubmit}
-      className="new-staff-form "
-      action="https://getform.io/f/78817b5b-232c-4a4e-a5da-d26f37bbc897"
-      method="POST"
-      encType="multipart/form-data"
+       ref={form} onSubmit={sendEmail}
      
       >
         <div className="grid lg:grid-cols-2 gap-3">

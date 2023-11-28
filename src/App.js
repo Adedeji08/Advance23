@@ -6,6 +6,7 @@ import AboutAdvance from "./pages/About";
 import DiscoveryHome from "./pages/Home";
 import AdvanceRegistration from "./pages/Register";
 import { TailSpin } from "react-loader-spinner";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="w-[90%] mx-auto">
+       <ToastContainer className="toast-message-container" />
       {loading ? (
         <div className="load mx-auto mt-[85%] lg:mt-[20%]">
           <TailSpin
