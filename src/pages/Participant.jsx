@@ -13,13 +13,6 @@ import * as yup from "yup";
 function Participant() {
   const [loading, setLoading] = useState(false);
   
-  const schema = yup.object().shape({
-    firstName: yup.string().required("First name is required"),
-    lastName: yup.string().required("Last name is required"),
-    email: yup.string().email("Invalid email").required("Email is required"),
-    // Add more validation rules for other fields
-  });
-  
   const {
     handleSubmit,
     control,
@@ -27,10 +20,7 @@ function Participant() {
     formState: { errors },
     setValue,
   } = useForm({
-    defaultValues: {
-      // Your default values here
-    },
-    resolver: yupResolver(schema), // If you are using Yup for validation
+  
   });
 
   return (
@@ -38,7 +28,7 @@ function Participant() {
       <form 
       onSubmit={handleSubmit}
         className="new-staff-form "
-        action="https://getform.io/f/4ea57067-4d6d-4143-8100-47220c9835ff"
+      action="https://getform.io/f/78817b5b-232c-4a4e-a5da-d26f37bbc897"
         method="POST"
         encType="multipart/form-data"
        
