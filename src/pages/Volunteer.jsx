@@ -272,10 +272,10 @@ function Volunteer() {
                     <MenuItem disabled value="">
                       Need Accommodation?
                     </MenuItem>
-                      <MenuItem value="male" className="capitalize">
+                      <MenuItem value="yes" className="capitalize">
                         Yes
                       </MenuItem>
-                      <MenuItem value="female" className="capitalize">
+                      <MenuItem value="no" className="capitalize">
                         No
                     </MenuItem>
                   </Select>
